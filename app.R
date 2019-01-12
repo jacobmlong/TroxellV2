@@ -3,10 +3,10 @@ library(alphavantager)
 library(shiny)
 library(tidyverse)
 library(readxl)
-Troxell0 <- read_excel("TroxellReal2.xls", sheet = "Core Eq Plus")
+Troxell0 <- read_excel("YOUR_FILENAME_HERE",)
 Troxell <- Troxell0 %>% filter(is.na(`DELETED\nDATE`))
 all_tickers <- sort(unique(Troxell$SYMBOL)) 
-av_api_key("0PERGX4JVLVXIKUO")
+av_api_key("YOUR_KEY_HERE")
 
 
 # Define UI for application that draws a histogram
